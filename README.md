@@ -26,6 +26,7 @@ before making it available to the API
     <li>The API works fine, but it feels hacked together. I did not follow any engineering best practices, such as writing SOLID code or any data / error checking which is output at various stages (from the Gemini LLM, from the query, from the DB, etc). I would address this on priority based on further requirements.  </li>
         <li>We do have a major risk while depending on LLMs to convert natural language to SQL queries, such as data leak, and risk of malicious SQL queries as well. Since I do not have very powerful hardware, sufficient enough to train LLMs I was not able to train a LLM model on my local laptop and had to rely on a hosted LLM such as Google Gemini. Once we get powerful hardware resources we can train a local LLM model and optimize it exclusively for SQL queries.</li>
     <li>The security is lagging in my code, I would attempt to integrate authentication into the API.</li>
+     <li>Various other performance upgrades, such as fine tuning the LLM.</li>
   </ul>
 </ol>
 
@@ -60,5 +61,16 @@ it?<br><br>
       Since this was a test / PoC type of project, I did not spend much time in best practices such as establishing a proper data pipeline, or checking for scalability. I would add these, if the opportunity comes. </li>
   </ul>
 </li>
+Steps to run the program - <br>
+1. Clone the frontend code from https://github.com/kai-subramanian/natural-query <br>
+2. Clone the backend API repo from https://github.com/kai-subramanian/bytegenie <br>
+3. Kindly delete the provided takehome_bytegenie.db as the data_api will recreate the db. Not deleting the existing db will cause some errors. <br>
+   a. Kindly replace the api key in data_api.py with an API from Google Gemini. You can get one here for free - https://aistudio.google.com/app/apikey
+4. Run the backend code from one terminal, using python data_api.py <br>
+5. From another terminal, go into the natural-query folder (frontend) <br>
+6. Once inside, install the dependencies for the frontend, by running npm install <br>
+7. Then, run npm start. <br>
+8. You should see the app open in localhost:3000 <br>
+9. The logs can be viewed in the terminal that runs the server.<br>
 Thank you for considering my assessment! 
 </ol></p>
