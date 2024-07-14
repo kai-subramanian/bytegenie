@@ -19,7 +19,7 @@ before making it available to the API
     <li>The async API did not allow query to be executed as a string and it threw an error 422, unprocessable entity. It wanted the text alone and not the JSON payload. Hence, i did some server side processing and imported the Pydantic library, and used the BaseModel to extract the query string alone from the request body. </li>
   </ul>
   </li>
-   
+<br><br>
 <li>How would you improve the backend, if you had more time to work on it?</li>
   <ul> 
     <li>The schema for the database is unclean and I did not follow any data manipulation / extrapolation methods and just used what was supplied. I would attempt to clean the raw data more.</li>
