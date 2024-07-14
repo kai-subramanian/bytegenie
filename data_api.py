@@ -1,11 +1,7 @@
 import pandas as pd
-import numpy as np
 import sqlite3
-import csv
 from pydantic import BaseModel
-from sklearn.preprocessing import StandardScaler
 from google import generativeai as genai
-import os
 # Load data
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -27,7 +23,7 @@ people_df.to_sql('people', con, if_exists='append', index=False)
 
 con.commit()
 
-genai.configure(api_key="AIzaSyAx9e13YbPmeFEhLHgCPeEdW8fjfG256yU")
+genai.configure(api_key="your_api_key_here")
 model=genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 class Query(BaseModel):
