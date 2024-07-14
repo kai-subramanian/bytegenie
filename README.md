@@ -65,7 +65,7 @@ Steps to run the program - <br>
 1. Clone the frontend code from https://github.com/kai-subramanian/natural-query <br>
 2. Clone the backend API repo from https://github.com/kai-subramanian/bytegenie <br>
 3. Kindly delete the provided takehome_bytegenie.db as the data_api will recreate the db. Not deleting the existing db will cause some errors. <br>
-   a. Kindly replace the api key in data_api.py with an API from Google Gemini. You can get one here for free - https://aistudio.google.com/app/apikey <br>
+   a. Kindly replace the api key in data_api.py with an API key from Google Gemini. You can get one here for free - https://aistudio.google.com/app/apikey <br>
 4. Run the backend code from one terminal, using python data_api.py <br>
 5. From another terminal, go into the natural-query folder (frontend) <br>
 6. Once inside, install the dependencies for the frontend, by running npm install <br>
