@@ -1,5 +1,5 @@
 ### bytegenie
-This repo contains the frontend, DB and API for takehome assessment.
+This repo contains the DB and API for takehome assessment. Frontend can be found here - https://github.com/kai-subramanian/natural-query
 Tech stack used - Python for backend API, React for frontend, SQLite for the database.
 
 <p>
@@ -20,7 +20,7 @@ before making it available to the API
   </ul>
   </li>
 -
-<li>how would you improve the backend, if you had more time to work on it?</li>
+<li>How would you improve the backend, if you had more time to work on it?</li>
   <ul> 
     <li>The schema for the database is unclean and I did not follow any data manipulation / extrapolation methods and just used what was supplied. I would attempt to clean the raw data more.</li>
     <li>The API works fine, but it feels hacked together. I did not follow any engineering best practices, such as writing SOLID code or any data / error checking which is output at various stages (from the Gemini LLM, from the query, from the DB, etc). I would address this on priority based on further requirements.  </li>
@@ -50,8 +50,8 @@ before making it available to the API
   <ul>
     <li>The csv data had many missing entries such as duration_in_current_job and duration_in_current_company, which might lead to inconsistencies while processing with the data. </li>
     <li>Data cleansing / extrapolation was hard, given that it was qualitative data.</li>
+   </ul>
 </li>
-
 <li>How would you improve the database design if you had more time to work on
 it?<br><br>
   <ul>
@@ -65,7 +65,7 @@ Steps to run the program - <br>
 1. Clone the frontend code from https://github.com/kai-subramanian/natural-query <br>
 2. Clone the backend API repo from https://github.com/kai-subramanian/bytegenie <br>
 3. Kindly delete the provided takehome_bytegenie.db as the data_api will recreate the db. Not deleting the existing db will cause some errors. <br>
-   a. Kindly replace the api key in data_api.py with an API from Google Gemini. You can get one here for free - https://aistudio.google.com/app/apikey
+   a. Kindly replace the api key in data_api.py with an API from Google Gemini. You can get one here for free - https://aistudio.google.com/app/apikey <br>
 4. Run the backend code from one terminal, using python data_api.py <br>
 5. From another terminal, go into the natural-query folder (frontend) <br>
 6. Once inside, install the dependencies for the frontend, by running npm install <br>
