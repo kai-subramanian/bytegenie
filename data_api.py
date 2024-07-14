@@ -23,7 +23,7 @@ people_df.to_sql('people', con, if_exists='append', index=False)
 
 con.commit()
 
-genai.configure(api_key="your_api_key_here")
+genai.configure(api_key="your_api_key_goes_here")
 model=genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 class Query(BaseModel):
