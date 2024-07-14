@@ -20,7 +20,7 @@ before making it available to the API
   </ul>
   </li>
 <br><br>
-<li>How would you improve the backend, if you had more time to work on it?</li>
+<li>How would you improve the backend, if you had more time to work on it?</li> <br><br>
   <ul> 
     <li>The schema for the database is unclean and I did not follow any data manipulation / extrapolation methods and just used what was supplied. I would attempt to clean the raw data more.</li>
     <li>The API works fine, but it feels hacked together. I did not follow any engineering best practices, such as writing SOLID code or any data / error checking which is output at various stages (from the Gemini LLM, from the query, from the DB, etc). I would address this on priority based on further requirements.  </li>
@@ -72,5 +72,6 @@ Steps to run the program - <br>
 7. Then, run npm start. <br>
 8. You should see the app open in localhost:3000 <br>
 9. The logs can be viewed in the terminal that runs the server.<br>
-Thank you for considering my assessment! 
+   <br><br>
+<h2><b>Thank you for considering my assessment! <b></h2>
 </ol></p>
